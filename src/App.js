@@ -26,35 +26,22 @@ function App() {
   }, []);
 
   return (
-    <div className="container">
-      {results?.map((characters) => {
-        return (
-          <Cards
-            characters={characters}
-            idSelected={idSelected}
-            setIdSelected={setIdSelected}
-            key={characters.id}
-          />
-        );
-      })}
-    </div>
+    <>
+      <h1 className="title">Rick and Morty Characters</h1>
+      <div className="container">
+        {results?.map((characters) => {
+          return (
+            <Cards
+              characters={characters}
+              idSelected={idSelected}
+              setIdSelected={setIdSelected}
+              key={characters.id}
+            />
+          );
+        })}
+      </div>
+    </>
   );
 }
 
 export default App;
-
-{
-  /* <div
-key={characters.id}
-className={`container ${selected ? "selected" : ""}`}
-role="button"
-onClick={() => setSelected(!selected)}
->
-<div className="card ">
-  <p>Name: {characters.name}</p>
-  <p>Status: {characters.status}</p>
-  <p>Species: {characters.species}</p>
-  <img src={characters.image} />
-</div>
-</div> */
-}
