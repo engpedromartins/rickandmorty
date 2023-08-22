@@ -1,0 +1,25 @@
+.card {
+  align-items: center;
+  padding: 20px;
+  gap: 10px;
+  border: 1px solid gray;
+  border-radius: 10px;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+.selected {
+  background-color: blue;
+  color: white;
+  border-radius: 10px;
+}
